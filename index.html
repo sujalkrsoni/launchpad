@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup MVP Launchpad</title>
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Flaticon Icons -->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- ✅ Responsive Navbar -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 text-xl font-bold">
+                <img src="./assets/logo.png" alt="Logo" class="w-10 h-10" />
+                CloudTrains
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex gap-6 items-center text-gray-700 font-medium">
+                <a href="#" class="hover:text-[#2B66AF] me-3">Home</a>
+                <a href="#" class="hover:text-[#2B66AF] me-3">About</a>
+                <a href="#" class="hover:text-[#2B66AF] me-3">Our Work</a>
+                <a href="#" class="hover:text-[#2B66AF] me-3">Blogs</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="hidden md:block">
+                <a href="#"
+                    class="bg-[#2B66AF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#2B668F] transition">
+                    Join Now
+                </a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 bg-white border-t space-y-2">
+            <a href="#" class="block text-gray-700 font-medium hover:text-[#2B66AF]">Home</a>
+            <a href="#" class="block text-gray-700 font-medium hover:text-[#2B66AF]">About</a>
+            <a href="#" class="block text-gray-700 font-medium hover:text-[#2B66AF]">Our Work</a>
+            <a href="#" class="block text-gray-700 font-medium hover:text-[#2B66AF]">Blogs</a>
+            <a href="#"
+                class="block bg-[#2B66AF] text-white text-center px-4 py-2 rounded-lg font-semibold hover:bg-[#2B668F] transition">
+                Join Now
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section>
+        <div class="max-w-7xl pt-36 md:pt-44 pb-20 mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+
+            <!-- Left Content -->
+            <div>
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full border border-sky-300 bg-sky-100/10">
+                    <i class="fi fi-rr-rocket text-sky-600"></i>
+                    <span class="text-sky-600 font-semibold text-[0.6rem] lg:text-sm sm:text-base ">200+ Successful
+                        Startups
+                        Launched</span>
+                </div>
+
+                <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight me-5">
+                    <span class="-ms-1 lg:-ms-2">Turn Your Startup Idea Into A</span>
+                    <span class="text-[#2B66AF]">Working MVP</span>
+                    In <span class="ms-0  lg:-ms-4">Just 21 Days</span>
+                </h1>
+
+                <p class="text-base sm:text-sm text-gray-600 mb-3">
+                    No Tech Team Required • No Coding Skills Needed • No Endless Delays
+                </p>
+                <p class="text-[#2B66AF] font-semibold mb-4 text-[0.6rem] sm:text-base">
+                    Join 200+ founders who turned their dreams into reality
+                </p>
+
+                <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20seat" target="_blank"
+                    class="inline-flex items-center gap-2 bg-[#2B66AF] text-white text-sm sm:text-lg font-semibold px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg hover:bg-[#2B668F] transition">
+
+                    <span class="leading-none">Book Your Seat Today</span>
+                    <span class="flex items-center justify-center">
+                        <i class="fi fi-rr-arrow-right text-base sm:text-lg mt-1 sm:mt-2"></i>
+                    </span>
+                </a>
+
+
+                <p class="mt-4 text-gray-500 text-sm">
+                    <i class="fi fi-rr-clock-three mr-1"></i>
+                    Next Batch Starts in <strong>3 Days</strong>!
+                </p>
+            </div>
+
+            <!-- Right Content with Floating Cards -->
+            <div class="relative w-full flex justify-center">
+                <!-- Top Left Floating Carousel -->
+                <div
+                    class="absolute -top-8 sm:-top-10 -left-4 sm:-left-10 z-10 w-28 sm:w-36 md:w-40 bg-white rounded-2xl shadow-xl p-2 sm:p-4">
+                    <div class="swiper swiper-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/img1.png" class="rounded-lg w-full" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img2.png" class="rounded-lg w-full" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <img src="https://engineerbabu.com/assets/img/why_choose_engineerbabu_group.webp" alt="Team"
+                    class="rounded-2xl w-[85%] sm:w-[80%] mx-auto" />
+
+                <!-- Bottom Right Floating Carousel -->
+                <div
+                    class="absolute -bottom-8 sm:-bottom-10 right-4 sm:right-10 z-10 w-28 sm:w-36 md:w-40 bg-white rounded-2xl shadow-xl p-2 sm:p-4">
+                    <div class="swiper swiper-bottom">
+                        <div class="swiper-wrapper animated-border">
+                            <div class="swiper-slide">
+                                <img src="./assets/img1.png" class="rounded-lg w-full" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img2.png" class="rounded-lg w-full" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decorative Shapes -->
+                <div
+                    class="absolute top-10 right-5 sm:right-20 w-6 sm:w-10 h-1 sm:h-2 bg-cyan-400 rotate-45 rounded-lg hidden sm:block">
+                </div>
+                <div
+                    class="absolute bottom-10 left-5 sm:left-20 w-6 sm:w-10 h-1 sm:h-2 bg-cyan-400 rotate-45 rounded-lg hidden sm:block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- let me teach you -->
+    <section class="w-full bg-[#F9FAFB] py-0">
+        <div
+            class="flex flex-col lg:flex-row items-center justify-between px-6 py-10 lg:py-20 max-w-7xl mx-auto gap-10">
+            <div class="relative flex-shrink-0 w-full lg:w-1/2 flex justify-center">
+                <div class="relative ">
+                    <img src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/6578033373fc0ca8bfd0360b_free%20madterclass%20saheli.webp"
+                        alt="Speaker" class="w-[300px] sm:w-[350px] lg:w-[650px] rounded-full z-100" />
+                </div>
+
+                <div class="floating-card absolute top-4 left-2 opacity-0 transition-opacity duration-1000"
+                    data-index="0">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/mzVTbqM/bhavika.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Bhavika</span><br>5000$ / month</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute bottom-4 left-10 opacity-0 transition-opacity duration-1000"
+                    data-index="0">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/ZK9bZPM/chaitra.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Chaitra</span><br>1Lac+ in 4 Months</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute top-10 right-4 opacity-0 transition-opacity duration-1000"
+                    data-index="1">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/HzT1cF3/avatar1.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Aarav</span><br>3Lac in 6 Months</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute bottom-8 right-8 opacity-0 transition-opacity duration-1000"
+                    data-index="1">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/NFLmv5W/avatar2.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Meera</span><br>2Lac in 3 Months</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute top-16 left-20 opacity-0 transition-opacity duration-1000"
+                    data-index="2">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/fndq5W5/avatar3.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Raj</span><br>6000$/month</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute bottom-10 left-32 opacity-0 transition-opacity duration-1000"
+                    data-index="2">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/vddrsW4/avatar4.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Sara</span><br>5 Clients / month</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute top-2 right-16 opacity-0 transition-opacity duration-1000"
+                    data-index="3">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/4Pm1w7q/avatar5.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Kiran</span><br>10k$/project</p>
+                    </div>
+                </div>
+
+                <div class="floating-card absolute bottom-16 right-20 opacity-0 transition-opacity duration-1000"
+                    data-index="3">
+                    <div class="bg-[#2B66AF] text-white rounded-xl px-4 py-2 text-sm flex items-center space-x-2">
+                        <img src="https://i.ibb.co/Yk3Z3CZ/avatar6.jpg" class="w-8 h-8 rounded-full object-cover" />
+                        <p><span class="font-semibold">Neha</span><br>4Lac+ income</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 space-y-6">
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold leading-snug ">
+                    Let me teach you how 1753+ Students and I did it in 2022 alone, and...
+                </h2>
+                <p class="font-semibold text-black uppercase">YOU BOSS! CAN DO IT TOO.</p>
+
+                <ul class="space-y-4 text-sm lg:text-lg text-gray-200">
+                    <li class="flex items-start gap-2">
+                        <span class="text-black text-xl">✔️</span>
+                        <span class="text-black">
+                            <strong>You will become financially independent</strong> working as a freelancer doing
+                            things
+                            you love and using skills that you didn't know you have.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-black text-xl">✔️</span>
+                        <span class="text-black">
+                            Don't have enough time? Or the only skill you have now is how to communicate in English?
+                            <strong>No problem. We have got your back.</strong>
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-black text-xl">✔️</span>
+                        <span class="text-black">
+                            <strong>You will be making 50,000 to 1,00,000 INR</strong> by serving Indian and
+                            international
+                            clients.
+                        </span>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20seat" target="_blank"
+                    class="inline-flex items-center gap-2 bg-[#2B66AF] text-white text-sm sm:text-lg font-semibold px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg hover:bg-[#2B668F] transition">
+
+                    <span class="leading-none">Book Your Seat Today</span>
+                    <span class="flex items-center justify-center">
+                        <i class="fi fi-rr-arrow-right text-base sm:text-lg mt-1 sm:mt-2"></i>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- From Idea to Working MVP -->
+    <section class="bg-white py-20 px-6 sm:px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span
+                class="text-sm font-semibold text-[#2B66AF] px-4 py-1 bg-[#D6E2F3] rounded-full inline-block mb-4 shadow-sm">
+                <i class="fas fa-rocket me-2 text-[#2B66AF]"></i> The LaunchPad MVP Method
+            </span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                From Idea to Working MVP<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#2B66AF] to-[#6699CC]">In Just 21
+                    Days</span>
+            </h2>
+            <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                Forget everything you think you know about building startups. We've cracked the code to help
+                non-technical founders build real, working products that customers actually pay for.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+            <!-- What You’ll Get -->
+            <div class="bg-[#2B66AF] text-white p-8 rounded-2xl shadow-xl space-y-5 transition-transform duration-300 hover:scale-[1.01]"
+                data-aos="fade-right">
+                <h3 class="text-lg lg:text-2xl font-semibold flex items-center gap-3">
+                    What You’ll Get:
+                </h3>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> No-code MVP development (seriously,
+                        ZERO coding required)
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Complete product roadmap & strategy
+                        session
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> User research & validation framework
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Landing page + signup flow setup
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Database & backend configuration
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Mobile-responsive design
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Payment gateway integration
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Analytics & tracking setup
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> User testing & feedback collection
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-white text-lg mt-1"></i> Growth strategy & launch plan
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Weekly Plan -->
+            <div class="space-y-6">
+                <div class="bg-white p-6 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg font-semibold flex items-center gap-3 text-[#2B66AF]">
+                        <i class="fas fa-clipboard-check text-xl"></i> Week 1: Foundation
+                    </h4>
+                    <p class="mt-2 text-gray-700 leading-relaxed">
+                        Idea validation, market research, user personas, and technical architecture planning. We’ll make
+                        sure you're building something people actually want.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-lg font-semibold flex items-center gap-3 text-[#2B66AF]">
+                        <i class="fas fa-tools text-xl"></i> Week 2: Building
+                    </h4>
+                    <p class="mt-2 text-gray-700 leading-relaxed">
+                        No-code development, database setup, user flows, and core features implementation. Your MVP
+                        starts taking shape without writing a single line of code.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-lg font-semibold flex items-center gap-3 text-[#2B66AF]">
+                        <i class="fas fa-rocket text-xl"></i> Week 3: Launch
+                    </h4>
+                    <p class="mt-2 text-gray-700 leading-relaxed">
+                        Testing, feedback collection, final tweaks, and launch preparation. Plus ongoing support to
+                        ensure your MVP succeeds in the market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Is this for you -->
+    <section class="py-20 bg-[#F9FAFB] w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 md:px-10 gap-12 max-w-7xl mx-auto items-start">
+
+            <div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2B66AF] mb-6">
+                    Is this for you? Yes if…
+                </h2>
+                <ul class="space-y-5 text-gray-700 text-base sm:text-lg">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-[#2B66AF] text-xl"></i>
+                        <span>
+                            <strong>You are ambitious</strong> and want to learn how to make extra money with your
+                            skills without quitting your job, but need guidance on where to start.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-[#2B66AF] text-xl"></i>
+                        <span>
+                            <strong>You want to make 50k - 1 Lac+ per month</strong> working part-time or full-time as
+                            a freelancer and just need guidance on how to do it.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-[#2B66AF] text-xl"></i>
+                        <span>
+                            You have basic English speaking and writing skill.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-[#2B66AF] text-xl"></i>
+                        <span>
+                            <strong>You want to make your career in freelancing</strong> and earn in 6-figures by
+                            working in Service-Based niches like Content Writing, Copywriting, Web Designing, Digital
+                            Marketing, Social Media Marketing, etc.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-[#2B66AF] text-xl"></i>
+                        <span>
+                            <strong>You want to learn secret strategies</strong> to get high-paying clients who value
+                            your skill and time.
+                        </span>
+                    </li>
+                </ul>
+
+                <p class="mt-6 text-lg sm:text-xl font-semibold text-gray-900">
+                    Most importantly, <span class="text-[#2B66AF]">you want to be your own BOSS</span> and choose who
+                    you work with on your own terms.
+                </p>
+                <p class="italic text-[#2B66AF] mt-2">Does this sound like you?</p>
+
+                <a href="https://wa.me/919876543210?text=I%20want%20to%20book%20a%20seat" target="_blank"
+                    class="inline-flex items-center gap-2 bg-[#2B66AF] text-white text-sm sm:text-lg font-semibold px-4 sm:px-6 py-1.5 sm:py-2 rounded-lg hover:bg-[#2B668F] transition">
+
+                    <span class="leading-none">Book Your Seat Today</span>
+                    <span class="flex items-center justify-center">
+                        <i class="fi fi-rr-arrow-right text-base sm:text-lg mt-1 sm:mt-2"></i>
+                    </span>
+                </a>
+            </div>
+
+            <div class="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[650px] sm:mx-auto overflow-hidden">
+                <div class="flex h-full gap-2 sm:gap-4">
+                    <div class="flex flex-col animate-scrollUp">
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+
+                    </div>
+
+                    <div class="flex flex-col animate-scrollUp">
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                        <img class="border-gray-200 border m-1 sm:m-2 w-full max-w-[150px] sm:max-w-[180px] md:max-w-[420px] lg:max-w-[240px]"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Add Tailwind Custom Animation in Style -->
+    <style>
+        @keyframes scrollUp {
+            0% {
+                transform: translateY(0%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .animate-scrollUp {
+            animation: scrollUp 20s linear infinite;
+        }
+
+        .animation-delay-10s {
+            animation-delay: 10s;
+        }
+    </style>
+
+    <!-- Testimonial Section Start -->
+    <section class="py-16 px-4 bg-white text-gray-900">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-6 tracking-tight text-gray-900">
+                What Our Students Say
+            </h2>
+            <p class="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+                Real stories from founders who transformed their ideas into successful businesses
+            </p>
+
+            <!-- Swiper -->
+            <div class="swiper testimonialSwiper px-2 sm:px-4 lg:px-0">
+                <div class="swiper-wrapper">
+                    <!-- card template -->
+                    <div class="swiper-slide p-4 box-border">
+                        <div
+                            class="bg-white border border-gray-200 shadow-lg rounded-2xl p-6 md:p-8 transform transition-transform duration-300 hover:scale-[1.03] h-full flex flex-col justify-between">
+                            <p class="text-gray-700 mb-6 text-base md:text-lg leading-relaxed italic flex-grow">
+                                "Tripti helped me build an MVP in 18 days. I now have 500+ paying students. Best
+                                decision ever!"
+                            </p>
+                            <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                            <div class="flex items-center gap-4 flex-wrap">
+                                <img src="https://i.pravatar.cc/50?img=1" alt="Rahul Gupta"
+                                    class="w-12 h-12 rounded-full ring-2 ring-purple-500" />
+                                <div class="text-left flex-grow">
+                                    <p class="font-semibold text-gray-900">Rahul Gupta</p>
+                                    <p class="text-sm text-purple-600">EdTech Founder</p>
+                                    <p class="text-xs text-gray-500">Mumbai</p>
+                                </div>
+                                <span
+                                    class="text-[#2B668F] mx-auto  text-sm font-semibold bg-green-100 px-3 py-1 rounded-full whitespace-nowrap">₹15L
+                                    ARR
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 box-border">
+                        <div
+                            class="bg-white border border-gray-200 shadow-lg rounded-2xl p-6 md:p-8 transform transition-transform duration-300 hover:scale-[1.03] h-full flex flex-col justify-between">
+                            <p class="text-gray-700 mb-6 text-base md:text-lg leading-relaxed italic flex-grow">
+                                "Tripti helped me build an MVP in 18 days. I now have 500+ paying students. Best
+                                decision ever!"
+                            </p>
+                            <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                            <div class="flex items-center gap-4 flex-wrap">
+                                <img src="https://i.pravatar.cc/50?img=1" alt="Rahul Gupta"
+                                    class="w-12 h-12 rounded-full ring-2 ring-purple-500" />
+                                <div class="text-left flex-grow">
+                                    <p class="font-semibold text-gray-900">Rahul Gupta</p>
+                                    <p class="text-sm text-purple-600">EdTech Founder</p>
+                                    <p class="text-xs text-gray-500">Mumbai</p>
+                                </div>
+                                <span
+                                    class="text-[#2B668F] mx-auto text-sm font-semibold bg-green-100 px-3 py-1 rounded-full whitespace-nowrap">₹15L
+                                    ARR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 box-border">
+                        <div
+                            class="bg-white border border-gray-200 shadow-lg rounded-2xl p-6 md:p-8 transform transition-transform duration-300 hover:scale-[1.03] h-full flex flex-col justify-between">
+                            <p class="text-gray-700 mb-6 text-base md:text-lg leading-relaxed italic flex-grow">
+                                "Tripti helped me build an MVP in 18 days. I now have 500+ paying students. Best
+                                decision ever!"
+                            </p>
+                            <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                            <div class="flex items-center gap-4 flex-wrap">
+                                <img src="https://i.pravatar.cc/50?img=1" alt="Rahul Gupta"
+                                    class="w-12 h-12 rounded-full ring-2 ring-purple-500" />
+                                <div class="text-left flex-grow">
+                                    <p class="font-semibold text-gray-900">Rahul Gupta</p>
+                                    <p class="text-sm text-purple-600">EdTech Founder</p>
+                                    <p class="text-xs text-gray-500">Mumbai</p>
+                                </div>
+                                <span
+                                    class="text-[#2B668F] mx-auto text-sm font-semibold bg-green-100 px-3 py-1 rounded-full whitespace-nowrap">₹15L
+                                    ARR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-4 box-border">
+                        <div
+                            class="bg-white border border-gray-200 shadow-lg rounded-2xl p-6 md:p-8 transform transition-transform duration-300 hover:scale-[1.03] h-full flex flex-col justify-between">
+                            <p class="text-gray-700 mb-6 text-base md:text-lg leading-relaxed italic flex-grow">
+                                "Tripti helped me build an MVP in 18 days. I now have 500+ paying students. Best
+                                decision ever!"
+                            </p>
+                            <div class="text-yellow-400 text-xl mb-4">★★★★★</div>
+                            <div class="flex items-center gap-4 flex-wrap">
+                                <img src="https://i.pravatar.cc/50?img=1" alt="Rahul Gupta"
+                                    class="w-12 h-12 rounded-full ring-2 ring-purple-500" />
+                                <div class="text-left flex-grow">
+                                    <p class="font-semibold text-gray-900">Rahul Gupta</p>
+                                    <p class="text-sm text-purple-600">EdTech Founder</p>
+                                    <p class="text-xs text-gray-500">Mumbai</p>
+                                </div>
+                                <span
+                                    class="text-[#2B668F] mx-auto text-sm font-semibold bg-green-100 px-3 py-1 rounded-full whitespace-nowrap">₹15L
+                                    ARR</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat the card template for others... -->
+                    <!-- card 2, 3, etc. just replace content accordingly -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- From Answers to Hires: Join the Community that Does It All -->
+    <section class="w-full bg-[#E9FAFB]">
+        <div class="py-12 px-4 md:px-12">
+            <!-- Top Content -->
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+                    From Answers to Hires: <br />
+                    <span class="text-[#2B66AF]">Join the Community that Does It All</span>
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Freelance 101 Academy Got Answers To All Your Questions (even if it’s 12am)
+                </p>
+            </div>
+
+            <!-- Image Section -->
+            <div class="flex justify-center mt-10">
+                <div class="relative max-w-5xl w-full">
+                    <!-- Replace the src below with your actual image path -->
+                    <img src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64ca301b8d53bb9175885b90_F101%20Community%20answers%20hire%20mock%20up.webp"
+                        alt="Community Chat and Laptop" />
+                </div>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="max-w-4xl mx-auto text-center mt-10">
+                <p class="text-gray-700 text-lg">
+                    With over <span class="font-semibold">5000+ freelancers</span> and the most talented mentors,
+                    no matter what questions you have, they will be answered.
+                </p>
+                <p class="mt-2 text-gray-700 font-medium">
+                    And that’s a Saheli Chatterjee guarantee.
+                </p>
+
+                <button
+                    class="mt-6 px-6 py-3 bg-[#2B66AF] text-white rounded-full text-lg hover:bg-blue-700 transition-all duration-300">
+                    BOOK YOUR SEAT TODAY
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+                Choose Your Success Path
+            </h2>
+            <p class="text-gray-600 mt-2 max-w-xl mx-auto">
+                Whether you prefer to learn independently or want hand-holding support, we have the perfect plan for
+                your entrepreneurial journey!
+            </p>
+            <div class="mt-4 inline-block bg-red-100 text-red-700 px-4 py-2 rounded text-sm font-medium">
+                Early Bird Special: Only 24 spots remaining. Prices go up by ₹10,000 after this batch!
+            </div>
+        </div>
+
+
+        <!-- Pricing Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-md p-6 transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">DIY Starter</h3>
+                <p class="text-center text-2xl font-bold text-[#2B66AF] mt-2">₹9,999</p>
+                <ul class="mt-6 space-y-2 text-sm text-gray-700">
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Complete Freelance 101 Course</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Step-by-Step Strategy</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Task Templates</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Bonus Resources</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Live Group Coaching</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>WhatsApp Group Access</li>
+                    <li><i class="fas fa-times text-red-500 mr-2"></i>Community Support</li>
+                </ul>
+                <button
+                    class="mt-6 w-full bg-[#2B66AF] text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Journey
+                </button>
+                <p class="text-center text-xs text-gray-500 mt-2">30-day money-back guarantee</p>
+            </div>
+
+            <!-- Card 2 (Most Popular) -->
+            <div
+                class="bg-white border-2 border-purple-500 rounded-xl shadow-lg p-6 transform scale-105 transition duration-500 hover:scale-110 relative">
+                <span
+                    class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <i class="fas fa-star mr-1"></i> MOST POPULAR
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 text-center">Founder's Choice</h3>
+                <p class="text-center text-2xl font-bold text-purple-600 mt-2">₹19,999</p>
+                <ul class="mt-6 space-y-2 text-sm text-gray-700">
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Everything in DIY Starter</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Live Group Mentorship Calls</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>WhatsApp Group Access</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Priority Email Support</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Private Community</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Tools Toolkit</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Personalized Feedback</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Custom Strategy Creation</li>
+                </ul>
+                <button
+                    class="mt-6 w-full bg-purple-600 text-white py-2 rounded-full font-semibold hover:bg-purple-700 transition">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Journey
+                </button>
+                <p class="text-center text-xs text-gray-500 mt-2">30-day money-back guarantee</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-md p-6 transform transition duration-500 hover:scale-105">
+                <h3 class="text-xl font-semibold text-gray-800 text-center">VIP Done-With-You</h3>
+                <p class="text-center text-2xl font-bold text-[#2B66AF] mt-2">₹39,999</p>
+                <ul class="mt-6 space-y-2 text-sm text-gray-700">
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Everything in Founder's Choice</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Bi-Weekly 1:1 Check-ins</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Dedicated WhatsApp Support</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Private Client Strategy Plan</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Custom Workflow System</li>
+                    <li><i class="fas fa-check text-[#2B66AF] mr-2"></i>Hands-on Review</li>
+                </ul>
+                <button
+                    class="mt-6 w-full bg-[#2B66AF] text-white py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+                    <i class="fas fa-rocket mr-2"></i>Start Your Journey
+                </button>
+                <p class="text-center text-xs text-gray-500 mt-2">30-day money-back guarantee</p>
+            </div>
+
+        </div>
+
+
+        <!-- Guarantee Box -->
+        <div class="max-w-5xl mx-auto my-12 px-4">
+            <div
+                class="rounded-2xl bg-gradient-to-r from-[#2B66AF] to-[#5FB0E3] text-white text-center px-6 py-8 shadow-md">
+
+                <h3 class="text-2xl font-bold flex justify-center items-center gap-2 mb-2">
+                    <i class="fas fa-shield-alt text-xl"></i> Your Investment is Protected
+                </h3>
+
+                <p class="text-base md:text-lg mb-6">
+                    We're so confident in LaunchPad MVP that we offer a 30-day money-back guarantee.
+                    If you don't see progress in your startup journey, get a full refund!
+                </p>
+
+                <div
+                    class="flex flex-col sm:flex-row justify-center items-center gap-6 text-white font-semibold text-sm">
+
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-undo-alt text-2xl mb-1"></i>
+                        30-Day Guarantee
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-rocket text-2xl mb-1"></i>
+                        Proven Method
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <i class="fas fa-users text-2xl mb-1"></i>
+                        200+ Success Stories
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Bonus -->
+    <section class="w-full bg-[#F9FAFB] text-white py-20 px-6 md:px-12 lg:px-24">
+        <div class="max-w-6xl mx-auto text-center space-y-8" data-aos="fade-up">
+
+            <!-- Label -->
+            <div class="inline-flex items-center gap-2 px-5 py-1.5 bg-white text-purple-700 font-semibold rounded-full text-[0.7rem] lg:text-sm shadow-lg"
+                data-aos="zoom-in" data-aos-delay="100">
+                <span>EXCLUSIVE BONUSES WORTH ₹70K+</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900" data-aos="fade-up" data-aos-delay="200">
+                But Wait, There's More!
+            </h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-600" data-aos="fade-up" data-aos-delay="300">
+                Join LaunchPad MVP today and unlock exclusive, high-value bonuses founders normally pay lakhs for.
+            </p>
+
+            <!-- Modern Bonus Cards -->
+            <div class="grid md:grid-cols-2 gap-8 mt-12 lg:gap-10">
+                <!-- Bonus Card -->
+                <div
+                    class="relative bg-white rounded-3xl shadow-md p-6 group hover:shadow-xl transition-all duration-300 border border-gray-200">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 p-3 rounded-xl text-indigo-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 20l9-5-9-5-9 5 9 5zM12 12V4m0 0L3 9l9 5 9-5-9-5z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-900">Investor-Ready Pitch Deck Template</h3>
+                            <p class="text-indigo-600 font-medium text-sm mt-1">Worth ₹25,000</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm">The exact pitch deck that helped our founders raise ₹150+
+                        crores.</p>
+                    <span
+                        class="absolute top-1 lg:top-4 right-4 text-xs bg-[#2B66AF] text-white font-semibold px-2 py-1 rounded-full">Popular</span>
+                </div>
+
+                <!-- Bonus Card -->
+                <div
+                    class="relative bg-white rounded-3xl shadow-md p-6 group hover:shadow-xl transition-all duration-300 border border-gray-200">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 p-3 rounded-xl text-indigo-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8 10h.01M12 10h.01M16 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-900">1-on-1 Growth Strategy Call</h3>
+                            <p class="text-indigo-600 font-medium text-sm mt-1">Worth ₹15,000</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm">Personal 60-minute session with Tripti to create your custom
+                        growth roadmap.</p>
+                    <span
+                        class="absolute top-1 lg:top-4 right-4 text-xs bg-[#2B66AF] text-white font-semibold px-2 py-1 rounded-full">Premium</span>
+                </div>
+
+                <!-- Bonus Card -->
+                <div
+                    class="relative bg-white rounded-3xl shadow-md p-6 group hover:shadow-xl transition-all duration-300 border border-gray-200">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 p-3 rounded-xl text-indigo-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 20h5v-2a4 4 0 00-5-3.87M12 4a4 4 0 00-4 4v4h8V8a4 4 0 00-4-4zM3 20h5v-2a4 4 0 00-5-3.87" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-900">Founder Community Access</h3>
+                            <p class="text-indigo-600 font-medium text-sm mt-1">Worth ₹10,000</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm">Lifetime access to our private WhatsApp & Discord community of
+                        200+ founders.</p>
+                    <span
+                        class="absolute top-1 lg:top-4 right-4 text-xs bg-[#2B66AF] text-white font-semibold px-2 py-1 rounded-full">Community</span>
+                </div>
+
+                <!-- Bonus Card -->
+                <div
+                    class="relative bg-white rounded-3xl shadow-md p-6 group hover:shadow-xl transition-all duration-300 border border-gray-200">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-indigo-100 p-3 rounded-xl text-indigo-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.75 17L15 12.75M9 13h.01M15 13h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-900">No-Code Tools Toolkit</h3>
+                            <p class="text-indigo-600 font-medium text-sm mt-1">Worth ₹20,000</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-600 text-sm">50+ no-code tools with tutorials, templates & growth hacks to
+                        scale your idea.</p>
+                    <span
+                        class="absolute top-1 lg:top-4 right-4 text-xs bg-[#2B66AF] text-white font-semibold px-2 py-1 rounded-full">Toolkit</span>
+                </div>
+            </div>
+
+
+            <!-- Summary -->
+            <div class="mt-14 bg-white/90 backdrop-blur-lg rounded-3xl text-gray-900 px-8 py-10 max-w-2xl mx-auto shadow-md hover:shadow-xl"
+                data-aos="zoom-in-up" data-aos-delay="500">
+                <h3 class="text-2xl font-bold flex items-center justify-center gap-2 mb-3">
+                    Total Bonus Value: ₹70,000+
+                </h3>
+                <p class="text-sm text-center text-gray-600">
+                    You get access to all bonuses — absolutely free — when you join LaunchPad MVP today.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- join india -->
+    <section class="bg-[#eaf6ff] py-16 px-4 md:px-10">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-[#111827] leading-tight">
+                Join India's Most Supportive <br />
+                <span class="text-[#2B66AF]">Founder Community</span>
+            </h2>
+            <p class="text-center mt-4 max-w-2xl mx-auto text-[#374151] text-base md:text-lg">
+                Building a startup can feel lonely. That's why we've created a warm, supportive community where founders
+                help founders succeed. You're never alone in this journey!
+            </p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Left Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Card 1 -->
+                    <div
+                        class="flex flex-col items-center bg-white rounded-xl shadow-md p-6 gap-4 hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center">
+                        <i class="fas fa-network-wired text-[#2B66AF] text-5xl"></i>
+                        <h3 class="font-semibold text-xl text-gray-900">200+ Founder Network</h3>
+                        <p class="text-gray-600 text-base max-w-md">
+                            Connect with like-minded entrepreneurs across India who are building amazing startups
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="flex flex-col items-center bg-white rounded-xl shadow-md p-6 gap-4 hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center">
+                        <i class="fas fa-lightbulb text-[#2B66AF] text-5xl"></i>
+                        <h3 class="font-semibold text-xl text-gray-900">Daily Support & Motivation</h3>
+                        <p class="text-gray-600 text-base max-w-md">
+                            Get instant answers, share wins, discuss challenges, and celebrate milestones together
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="flex flex-col items-center bg-white rounded-xl shadow-md p-6 gap-4 hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center">
+                        <i class="fas fa-handshake text-[#2B66AF] text-5xl"></i>
+                        <h3 class="font-semibold text-xl text-gray-900">Collaboration Opportunities</h3>
+                        <p class="text-gray-600 text-base max-w-md">
+                            Find co-founders, partners, customers, and mentors within our thriving ecosystem
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="flex flex-col items-center bg-white rounded-xl shadow-md p-6 gap-4 hover:shadow-lg transition-shadow duration-300 cursor-pointer text-center">
+                        <i class="fas fa-infinity text-purple-600 text-5xl"></i>
+                        <h3 class="font-semibold text-xl text-gray-900">Lifetime Access</h3>
+                        <p class="text-gray-600 text-base max-w-md">
+                            Once you join, you're family forever. Continue learning and growing with the community
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Right: Two Columns Infinite Scrolling -->
+                <div class="relative h-[540px] overflow-hidden rounded-xl ">
+                    <div class="flex h-full space-x-4 px-2 py-4">
+                        <!-- Column 1 -->
+                        <div class="flex flex-col animate-scrollUp space-y-4">
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 1" />
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 2" />
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 3" />
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="flex flex-col animate-scrollUp space-y-4">
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 4" />
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 5" />
+                            <img class="rounded-lg border border-gray-200 shadow-sm"
+                                src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                                alt="Community Image 6" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--"Saheli is a leading voice in the -->
+    <section class="bg-white py-20 px-6 sm:px-8 md:px-16 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2
+                class="text-4xl md:text-7xl font-extrabold text-gray-900 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">
+                "Saheli is a leading voice in the<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">world of
+                    marketing and </span><br>
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-400">freelancing.</span>
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+            <!-- What You'll Get -->
+            <div class="text-white p-6 rounded-xl" data-aos="fade-right">
+                <h3 class="text-xl font-semibold flex items-center gap-2 text-black">
+                    About Tripti
+                </h3>
+                <p class="text-black">
+                    <i class="fas fa-check text-green-500 ml-1"></i>
+                    You will become financially independent working as a freelancer doing things you love and using
+                    skills that you didn't know you have.
+                    Don't have enough time? Or the only skill you have now is how to communicate in English? No problem.
+                    We have got your back.
+                    You will be making 50,000 to 1,00,000 INR by serving Indian and international clients.
+                </p>
+                <p class="text-black my-3">
+                    <i class="fas fa-check text-green-500 ml-1"></i>
+                    You will become financially independent working as a freelancer doing things you love and using
+                    skills that you didn't know you have.
+                    Don't have enough time? Or the only skill you have now is how to communicate in English? No problem.
+                    We have got your back.
+                    You will be making 50,000 to 1,00,000 INR by serving Indian and international clients.
+                </p>
+                <p class="text-black">
+                    <i class="fas fa-check text-green-500 ml-1"></i>
+                    You will become financially independent working as a freelancer doing things you love and using
+                    skills that you didn't know you have.
+                    Don't have enough time? Or the only skill you have now is how to communicate in English? No problem.
+                    We have got your back.
+                    You will be making 50,000 to 1,00,000 INR by serving Indian and international clients.
+                </p>
+            </div>
+
+
+            <!-- Right: Two Columns Infinite Scrolling -->
+            <div class="relative h-[540px] overflow-hidden rounded-xl ">
+                <div class="flex h-full space-x-4 px-2 py-4">
+                    <!-- Column 1 -->
+                    <div class="flex flex-col animate-scrollUp space-y-4">
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 1" />
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 2" />
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 3" />
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="flex flex-col animate-scrollUp space-y-4">
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 4" />
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 5" />
+                        <img class="rounded-lg border border-gray-200 shadow-sm"
+                            src="https://cdn.prod.website-files.com/642e6a606932b78651f43664/64c29513e813b5edc51e4bd0_F101aWins%20(23)-p-500.webp"
+                            alt="Community Image 6" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Faq -->
+    <section class="bg-gradient-to-b from-blue-50 to-blue-50 py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-4">Got Questions? We've Got Answers! </h2>
+            <p class="text-center text-lg text-gray-600 mb-10">
+                These are the most common questions we get from founders just like you.
+                If you don't see your question here, just message us on WhatsApp!
+            </p>
+
+            <div id="faq-container" class="space-y-5">
+                <!-- FAQ START -->
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        I have zero technical knowledge. Can I really build an MVP?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Yes! This program is specifically designed for non-tech founders. You'll get help every step
+                            of the way to bring your MVP to life—no coding needed.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        How is this different from hiring developers?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Hiring developers is costly and slow. Our approach lets you quickly test your idea using
+                            no-code tools with expert support—at a fraction of the cost.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        What if my idea doesn't work or needs changes?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            That’s completely normal! You’ll get expert feedback and can pivot quickly. The process is
+                            flexible and supports iteration.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        I'm not sure if my idea is good enough. Should I join?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Yes! We help you validate your idea and improve it. Even if you're unsure, this is the best
+                            way to test your vision fast.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        How much time do I need to dedicate daily?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Ideally, 1–2 hours a day is great. Everything is flexible and designed to fit around your
+                            schedule.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        What if I get stuck during the process?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            You’ll never be alone. Our team is available to support you throughout the program with live
+                            help, resources, and guidance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        Can I really make money with a no-code MVP?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Yes! Many of our users generate real revenue with no-code MVPs. The key is validation and
+                            solving a real problem.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        What happens after the 21 days?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            You’ll have a working MVP and can either launch it, test with users, or get continued
+                            support through our alumni network.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        Is there a money-back guarantee?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            Yes, we offer a money-back guarantee if you're not satisfied within the first 7 days.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item border rounded-xl shadow-md overflow-hidden">
+                    <button
+                        class="faq-toggle w-full text-left px-6 py-5 bg-white hover:bg-blue-50 text-sm lg:text-xl font-semibold flex justify-between items-center">
+                        I live outside major cities. Can I still join?
+                        <svg class="w-6 h-6 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="faq-content bg-gray-50 text-sm lg:text-xl text-gray-700 px-6 overflow-hidden max-h-0 transition-all duration-500">
+                        <div class="py-4">
+                            100%! Everything is remote-friendly. You can join and participate fully from anywhere in the
+                            world.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ END -->
+            </div>
+
+
+
+            <div class="bg-[#2676BA] text-white text-center px-6 py-12 rounded-2xl max-w-5xl mx-auto my-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Still Have Questions?
+                </h2>
+                <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                    We're here to help! Our founder community is super friendly and Tripti personally answers questions.
+                    Don't let doubts hold you back from your startup dreams!
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="https://wa.me/1234567890" target="_blank"
+                        class="bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold px-6 py-3 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-white text-lg"></i> Ask on WhatsApp
+                    </a>
+                    <a href="mailto:example@email.com"
+                        class="bg-white hover:bg-gray-200 text-[#2166f0] font-semibold px-6 py-3 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fas fa-envelope text-[#2B66AF]"></i> Send Email
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- your startup journey -->
+    <section
+        class="bg-gradient-to-r from-[#2961EB] to-[#08B2D4] text-white py-12 px-4 sm:py-16 sm:px-6 md:px-10 text-center max-w-full">
+        <h1 data-aos="fade-up" class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4">
+            Your Startup Journey
+            <span class="text-yellow-400">
+                Starts Right Now!
+                <i class="fas fa-rocket text-white"></i>
+            </span>
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="100" class="text-base sm:text-lg md:text-xl mb-2 max-w-3xl mx-auto">
+            Stop dreaming, start building! Join 200+ founders who turned their ideas into reality.
+        </p>
+
+        <p data-aos="fade-up" data-aos-delay="200"
+            class="text-lg sm:text-xl font-bold text-white mb-12 max-w-3xl mx-auto">
+            <span class="text-yellow-300">Your MVP is just 21 days away.</span>
+        </p>
+
+        <!-- Three Stats -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12 px-2 sm:px-0">
+            <div data-aos="fade-up" data-aos-delay="300"
+                class="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition duration-300">
+                <div class="text-3xl mb-2">
+                    <i class="fas fa-clock text-white"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Next Batch Starts</h3>
+                <p class="text-2xl font-bold text-yellow-300">3 Days</p>
+                <p class="text-sm text-gray-200">Limited to 20 founders only</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400"
+                class="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition duration-300">
+                <div class="text-3xl mb-2">
+                    <i class="fas fa-users text-white"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Spots Remaining</h3>
+                <p class="text-2xl font-bold text-yellow-300">7/20</p>
+                <p class="text-sm text-yellow-100">Filling up fast!</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500"
+                class="bg-white/10 border border-white/20 rounded-xl p-6 hover:bg-white/20 transition duration-300">
+                <div class="text-3xl mb-2">
+                    <i class="fas fa-bolt text-white"></i>
+                </div>
+                <h3 class="text-lg font-semibold">Early Bird Savings</h3>
+                <p class="text-2xl font-bold text-yellow-300">₹10K</p>
+                <p class="text-sm text-gray-200">Price increases after this batch</p>
+            </div>
+        </div>
+
+        <!-- What Happens Section -->
+        <div data-aos="fade-up" data-aos-delay="600"
+            class="bg-white/10 border border-white/30 rounded-xl max-w-5xl mx-auto px-6 py-8 mb-10">
+            <h3 class="text-xl sm:text-2xl font-bold mb-6 text-white">
+                <i class="fas fa-bullseye mr-2 text-white""></i> Here's What Happens When You Join Today:
+            </h3>
+            <div class=" grid grid-cols-1 sm:grid-cols-2 gap-4 text-left text-sm sm:text-base text-white">
+                    <div><i class="fas fa-check-circle mr-2 text-white"></i> Instant access to the complete LaunchPad
+                        MVP program</div>
+                    <div><i class="fas fa-check-circle mr-2 text-white"></i> Join our exclusive founder WhatsApp
+                        community</div>
+                    <div><i class="fas fa-check-circle mr-2 text-white"></i> Get all ₹70,000 worth bonuses immediately
+                    </div>
+                    <div><i class="fas fa-check-circle mr-2 text-white"></i> Start building your MVP within 24 hours
+                    </div>
+        </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="#" data-aos="zoom-in" data-aos-delay="700"
+            class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition duration-300 mb-6">
+            <i class="fas fa-rocket mr-2 text-white"></i> YES! Start My MVP Journey Now →
+        </a>
+
+        <!-- Footer Guarantees -->
+        <div data-aos="fade-up" data-aos-delay="800"
+            class="flex flex-wrap justify-center gap-4 text-sm text-green-200 mb-6">
+            <span><i class="fas fa-check mr-1 text-white"></i> 30-day money-back guarantee</span>
+            <span><i class="fas fa-check mr-1 text-white"></i> Instant community access</span>
+            <span><i class="fas fa-check mr-1 text-white"></i> Start building today</span>
+        </div>
+
+        <!-- Quote -->
+        <p data-aos="fade-up" data-aos-delay="900" class="italic text-sm text-white max-w-3xl mx-auto">
+            "The best time to plant a tree was 20 years ago. The second best time is now." <br />
+            <span class="font-semibold text-white">Your startup tree starts today.</span>
+        </p>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="bg-[#0e1629] text-white px-6 py-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 justify-between">
+
+            <!-- About Section -->
+            <div class="md:w-1/3">
+                <div class="flex">
+                    <img src="./assets/logo.png" alt="CloudTrains Logo" class="w-12 h-12 mb-3" />
+                    <span class="ms-3 mb-1">
+                        <h2 class="text-2xl mb-0 p-0 font-bold"><span class="font-semibold">Cloud</span>Trains</h2>
+                        <a href="#" class="text-[#4f8df9] font-medium block mb-3">LaunchPad MVP</a>
+                    </span>
+                </div>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Empowering non-technical founders to build successful startups without coding.
+                    Join 200+ founders who've turned their dreams into reality with our proven 21-day method.
+                </p>
+                <div class="flex items-center gap-3 mt-4">
+                    <a href="#"><i class="fab fa-whatsapp text-white text-lg"></i></a>
+                    <a href="#"><i class="fas fa-envelope text-white"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#" class="hover:text-white">Home</a></li>
+                    <li><a href="#" class="hover:text-white">How It Works</a></li>
+                    <li><a href="#" class="hover:text-white">About Tripti</a></li>
+                    <li><a href="#" class="hover:text-white">Success Stories</a></li>
+                    <li><a href="#" class="hover:text-white">Pricing</a></li>
+                </ul>
+            </div>
+
+            <!-- Support Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Support</h3>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#" class="hover:text-white">FAQ</a></li>
+                    <li><a href="#" class="hover:text-white">Community</a></li>
+                    <li><a href="#" class="hover:text-white">WhatsApp Support</a></li>
+                    <li><a href="#" class="hover:text-white">Email Support</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div
+            class="border-t border-[#1d2c4c] mt-10 pt-6 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2025 CloudTrains. All rights reserved.</p>
+            <p>Made with ❤️ for Indian founders 🇮🇳</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Faq -->
+    <script>
+        // Accordion functionality
+        const toggles = document.querySelectorAll('.faq-toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+                document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
+                document.querySelectorAll('.faq-toggle svg').forEach(i => i.classList.remove('rotate-180'));
+
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    toggle.querySelector('svg').classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+
+    <!-- Swiper.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Initialization Script -->
+    <script>
+        const swiper = new Swiper('.testimonialSwiper', {
+            loop: true,
+            spaceBetween: 24,
+            grabCursor: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 1.1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
+
+    <!-- cards floating in sec 2 -->
+    <script>
+        const cards = document.querySelectorAll('.floating-card');
+        const groupCount = 4;
+        let current = 0;
+
+        function updateCards() {
+            cards.forEach(card => {
+                const cardIndex = parseInt(card.dataset.index);
+                if (cardIndex === current) {
+                    card.classList.add('opacity-100');
+                    card.classList.remove('opacity-0');
+                } else {
+                    card.classList.remove('opacity-100');
+                    card.classList.add('opacity-0');
+                }
+            });
+
+            current = (current + 1) % groupCount;
+        }
+
+        updateCards(); // Initial
+        setInterval(updateCards, 3000);
+    </script>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.swiper-top', {
+            loop: true,
+            autoplay: { delay: 2000, disableOnInteraction: false }
+        });
+        new Swiper('.swiper-bottom', {
+            loop: true,
+            autoplay: { delay: 2500, disableOnInteraction: false }
+        });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 800 });
+    </script>
+
+    <!-- Responsive Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
